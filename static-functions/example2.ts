@@ -1,0 +1,16 @@
+class User1 {
+    name: string;
+    age: number
+
+    constructor(name: string, age: number) {
+        this.name = name
+        this.age = age
+    }
+
+    static isAdult(age: number) {
+        return age >= 18
+    }
+}
+
+console.log(User1.isAdult(30), '30')
+console.log(User1.isAdult(15), '15')
